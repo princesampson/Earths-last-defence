@@ -22,9 +22,11 @@ GameObject:
   - component: {fileID: 33033834583644572}
   - component: {fileID: 23947787448481106}
   - component: {fileID: 54332110354831992}
+  - component: {fileID: 135070817818758850}
+  - component: {fileID: 114002764732066004}
   m_Layer: 0
   m_Name: AsteroidTwo
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -99,3 +101,26 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &114002764732066004
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1678186851574658}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 340e626136dd9b0488eefe380b7516da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!135 &135070817818758850
+SphereCollider:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1678186851574658}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 1.0639858
+  m_Center: {x: 0.0002722144, y: 0.012664199, z: 0.1399388}
