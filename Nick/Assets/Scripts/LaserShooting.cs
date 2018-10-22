@@ -16,6 +16,17 @@ public class LaserShooting : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		
+
+        ray = new Ray(transform.position, transform.forward);
+        Debug.DrawRay(ray.origin, ray.direction * rayDistance, Color.green);
+
+        if (Physics.Raycast(ray, out hit))
+        {
+            if (hit.distance <= rayDistance)
+            {
+                print("die");
+            }
+        }
+
 	}
 }

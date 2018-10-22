@@ -121,8 +121,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 20666501}
-  - component: {fileID: 20666503}
   - component: {fileID: 20666502}
+  - component: {fileID: 20666503}
   m_Layer: 0
   m_Name: KillZone
   m_TagString: Untagged
@@ -163,7 +163,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 20666500}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 478cb27da5e045f439f812b6c5ebd99c, type: 3}
+  m_Script: {fileID: 11500000, guid: e20c8888774712a469306b939a9b20be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &170076733
@@ -302,13 +302,13 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 534669902}
-  m_LocalRotation: {x: 0.01745245, y: -0, z: -0, w: 0.99984777}
-  m_LocalPosition: {x: 0, y: 4, z: -27.5}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 5.3, z: -14.4}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1296189847}
   m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: 2, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1296189845 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100006, guid: 528af06b5663c38488b86464a2683b4b,
@@ -331,18 +331,18 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 400006, guid: 528af06b5663c38488b86464a2683b4b,
     type: 3}
   m_PrefabInternal: {fileID: 1919417506}
---- !u!65 &1296189848
-BoxCollider:
+--- !u!114 &1296189848
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1296189845}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 8.00239, y: 2.3382616, z: 9.466455}
-  m_Center: {x: -0.020965576, y: 0.94310474, z: 0.5852804}
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 79c8371ef88263f4f941d8e0968e8694, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rayDistance: 10
 --- !u!65 &1296189849
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5066,7 +5066,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400006, guid: 528af06b5663c38488b86464a2683b4b, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: -0.5
       objectReference: {fileID: 0}
     - target: {fileID: 400006, guid: 528af06b5663c38488b86464a2683b4b, type: 3}
       propertyPath: m_LocalRotation.x
