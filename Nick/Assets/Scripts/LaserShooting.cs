@@ -22,10 +22,14 @@ public class LaserShooting : MonoBehaviour {
 
         if (Physics.Raycast(ray, out hit))
         {
-            if (hit.distance <= rayDistance)
+            if (Input.GetKeyDown(KeyCode.Space))
             {
-                print("die");
+                if (hit.distance <= rayDistance)
+                {
+                    print("die");
+                }
             }
+           
         }
 
 	}
