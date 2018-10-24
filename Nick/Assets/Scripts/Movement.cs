@@ -29,7 +29,7 @@ public class Movement : MonoBehaviour
         transform.position = newPositionSide;
 
         Vector3 newPositionUP = transform.position + movement;
-        newPositionUP.y = Mathf.Clamp(newPositionUP.y,-5, 8); // restricts movemnet to in the Y axis
+        newPositionUP.y = Mathf.Clamp(newPositionUP.y,-8, 8); // restricts movemnet to in the Y axis
         transform.position = newPositionUP;
 
     }

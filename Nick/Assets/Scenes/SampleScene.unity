@@ -260,7 +260,7 @@ ParticleSystem:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 42388156}
   serializedVersion: 5
-  lengthInSec: 5
+  lengthInSec: 10
   simulationSpeed: 1
   stopAction: 0
   looping: 1
@@ -4953,7 +4953,7 @@ Transform:
   m_PrefabInternal: {fileID: 1069846258}
   m_GameObject: {fileID: 509481824}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2, y: -83, z: 816}
+  m_LocalPosition: {x: -2, y: -3, z: 820}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 901046536}
@@ -5141,11 +5141,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4125075403290304, guid: 9b8bfdd0aa69ccb418bb47fdc681f605, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -83
+      value: -3
       objectReference: {fileID: 0}
     - target: {fileID: 4125075403290304, guid: 9b8bfdd0aa69ccb418bb47fdc681f605, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 816
+      value: 820
       objectReference: {fileID: 0}
     - target: {fileID: 4125075403290304, guid: 9b8bfdd0aa69ccb418bb47fdc681f605, type: 2}
       propertyPath: m_LocalRotation.x
@@ -5264,7 +5264,7 @@ ParticleSystem:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1347568764}
   serializedVersion: 5
-  lengthInSec: 5
+  lengthInSec: 10
   simulationSpeed: 1
   stopAction: 0
   looping: 1
@@ -9929,7 +9929,7 @@ ParticleSystem:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1601146470}
   serializedVersion: 5
-  lengthInSec: 5
+  lengthInSec: 10
   simulationSpeed: 1
   stopAction: 0
   looping: 1

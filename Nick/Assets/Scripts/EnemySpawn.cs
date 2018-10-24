@@ -23,7 +23,7 @@ public class EnemySpawn : MonoBehaviour
             Random.Range(-spawnValue.z, spawnValue.z));
         GameObject enemy = Instantiate(gameObjects[randomInt], spawnPosistion + spawner.position, spawner.rotation);
         Rigidbody enemyRB = enemy.GetComponent<Rigidbody>();
-        enemyRB.velocity = transform.TransformDirection(Vector3.forward * 5);
+        enemyRB.velocity = transform.TransformDirection(Vector3.forward * 10f);
         enemy.transform.parent = transform; 
 
     }
