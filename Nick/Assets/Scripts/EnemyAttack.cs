@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class EnemyAttack : MonoBehaviour {
 
@@ -27,8 +25,9 @@ public class EnemyAttack : MonoBehaviour {
             {
                 print("Player dead");
                 GameObject capsule = Instantiate(enemyLaser, spawner.position, spawner.rotation);
+                Physics.IgnoreCollision(enemyLaser.GetComponent<Collider>(), GetComponent<Collider>());
                 Rigidbody enemyLaserRB = capsule.GetComponent<Rigidbody>();
-                enemyLaserRB.velocity = transform.TransformDirection(Vector3.forward * 1f);
+                enemyLaserRB.velocity = transform.TransformDirection(Vector3.forward * 5f);
                 transform.parent = transform; // parents spawned object to it's spawned point in the hierarchy 
             }
         }
