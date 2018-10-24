@@ -5076,6 +5076,11 @@ Prefab:
       propertyPath: rayDistance
       value: 20
       objectReference: {fileID: 0}
+    - target: {fileID: 65624340533590370, guid: df779190cb904004490b08ead18b3352,
+        type: 2}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: df779190cb904004490b08ead18b3352, type: 2}
   m_IsPrefabAsset: 0

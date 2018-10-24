@@ -25,9 +25,8 @@ public class EnemyAttack : MonoBehaviour {
             {
                 print("Player dead");
                 GameObject capsule = Instantiate(enemyLaser, spawner.position, spawner.rotation);
-                Physics.IgnoreCollision(enemyLaser.GetComponent<Collider>(), GetComponent<Collider>());
                 Rigidbody enemyLaserRB = capsule.GetComponent<Rigidbody>();
-                enemyLaserRB.velocity = transform.TransformDirection(Vector3.forward * 5f);
+                enemyLaserRB.velocity = transform.TransformDirection(Vector3.forward * 20f);
                 transform.parent = transform; // parents spawned object to it's spawned point in the hierarchy 
             }
         }
