@@ -25,11 +25,11 @@ public class Movement : MonoBehaviour
         transform.Translate(movement * Time.deltaTime * moveSpeed);
 
         Vector3 newPositionSide = transform.position + movement; //sets new position for where restriction shall happen
-        newPositionSide.x = Mathf.Clamp(newPositionSide.x, -8, 8); //restricts player movement to the side
+        newPositionSide.x = Mathf.Clamp(newPositionSide.x, -10, 10); //restricts player movement in the X axis
         transform.position = newPositionSide;
 
         Vector3 newPositionUP = transform.position + movement;
-        newPositionUP.y = Mathf.Clamp(newPositionUP.y, -8, 8);
+        newPositionUP.y = Mathf.Clamp(newPositionUP.y,-5, 8); // restricts movemnet to in the Y axis
         transform.position = newPositionUP;
 
     }

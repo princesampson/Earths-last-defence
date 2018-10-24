@@ -4,10 +4,11 @@ using UnityEngine;
 
 public class EnemyAttack : MonoBehaviour {
 
-    public GameObject enemylaser;
+    public GameObject enemyLaser;
     private Ray ray;
     private RaycastHit hit;
-    public float rayDistance = 15f;
+    public float rayDistance = 5f;
+    public Transform spawner;
 
 	// Use this for initialization
 	void Start () {
@@ -25,6 +26,10 @@ public class EnemyAttack : MonoBehaviour {
             if (hit.collider.CompareTag("Player") && hit.distance <= rayDistance)
             {
                 print("Player dead");
+                GameObject capsule = Instantiate(enemyLaser, spawner.position, spawner.rotation);
+                Rigidbody enemyLaserRB = capsule.GetComponent<Rigidbody>();
+                enemyLaserRB.velocity = transform.TransformDirection(Vector3.forward * 2);
+                transform.parent = transform; // parents spawned object to it's spawned point in the hierarchy 
             }
         }
     }
