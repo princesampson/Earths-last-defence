@@ -7,9 +7,12 @@ public class EnemyAttack : MonoBehaviour {
     private RaycastHit hit;
     public float rayDistance = 5f;
     public Transform spawner;
+	public float attackDamage = 10f;
+
 
 	// Use this for initialization
-	void Start () {
+	void Start ()
+	{
 		
 	}
 	
@@ -31,4 +34,12 @@ public class EnemyAttack : MonoBehaviour {
             }
         }
     }
+
+	void Attack()
+	{
+		if (true)
+		{
+
+		}
+	}
 }
