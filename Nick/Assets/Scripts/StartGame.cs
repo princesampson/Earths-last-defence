@@ -6,8 +6,8 @@ using UnityEngine.SceneManagement;
 
 public class StartGame : MonoBehaviour {
 
-	public void NextScene()
+	public void PlayGame()
 	{
-		SceneManager.LoadScene("SampleScene", LoadSceneMode.Single);
+		SceneManager.LoadScene("SampleScene", LoadSceneMode.Single); //Starts the game scene as a single scene
 	}
 }
