@@ -12,7 +12,7 @@ public class EnemySpawn : MonoBehaviour
 	// Use this for initialization
 	void Start ()
     {
-        InvokeRepeating("Inst", 1f, 5f);
+		InvokeRepeating("Inst", 5f, 3f);
     }
 	
 	void Inst()

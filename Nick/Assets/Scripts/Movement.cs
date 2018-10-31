@@ -5,7 +5,7 @@ using UnityEngine;
 public class Movement : MonoBehaviour
 {
 
-    public float moveSpeed = 1f;
+	public float moveSpeed = 1f;
     
 
     // Use this for initialization
@@ -24,11 +24,11 @@ public class Movement : MonoBehaviour
         Vector3 movement = new Vector3(horizontal, vertical, 0f);
         transform.Translate(movement * Time.deltaTime * moveSpeed);
 
-        Vector3 newPositionSide = transform.position + movement; //sets new position for where restriction shall happen
+        Vector3 newPositionSide = transform.position; //sets new position for where restriction shall happen
         newPositionSide.x = Mathf.Clamp(newPositionSide.x, -10, 10); //restricts player movement in the X axis
         transform.position = newPositionSide;
 
-        Vector3 newPositionUP = transform.position + movement;
+        Vector3 newPositionUP = transform.position;
         newPositionUP.y = Mathf.Clamp(newPositionUP.y,-8, 8); // restricts movemnet to in the Y axis
         transform.position = newPositionUP;
 

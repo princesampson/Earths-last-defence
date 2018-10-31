@@ -40,7 +40,7 @@ GameObject:
   - component: {fileID: 54474247574844662}
   - component: {fileID: 65734857763077092}
   m_Layer: 0
-  m_Name: spacecraft 2
+  m_Name: EnemyCraft1
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -156,3 +156,4 @@ MonoBehaviour:
   enemyLaser: {fileID: 1833766940913750, guid: a16cbd962e24bfe4d8ac796a43bf4bb8, type: 2}
   rayDistance: 15
   spawner: {fileID: 4093662590482574}
+  attackDamage: 10

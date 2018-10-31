@@ -13,7 +13,7 @@ public class SpaceDebris : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 
-        InvokeRepeating("Inst", 1f, 1f);
+		InvokeRepeating("Inst", 5f, 1f);
 	}
 	
 	// Update is called once per frame
