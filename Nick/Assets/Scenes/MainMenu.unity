@@ -122,6 +122,7 @@ GameObject:
   m_Component:
   - component: {fileID: 44618251}
   - component: {fileID: 44618250}
+  - component: {fileID: 44618252}
   m_Layer: 5
   m_Name: GameController
   m_TagString: Untagged
@@ -158,6 +159,17 @@ RectTransform:
   m_AnchoredPosition: {x: 557, y: 211.5}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &44618252
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 44618249}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d6672a7ebe3ee646ba8ef45702d8393, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &376338785
 GameObject:
   m_ObjectHideFlags: 0
@@ -308,7 +320,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 927294403}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 44618252}
+        m_MethodName: QuitGame
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 1
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &927294403
