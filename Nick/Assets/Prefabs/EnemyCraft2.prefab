@@ -155,5 +155,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyLaser: {fileID: 1833766940913750, guid: a16cbd962e24bfe4d8ac796a43bf4bb8, type: 2}
   rayDistance: 5
-  spawner: {fileID: 0}
+  spawner: {fileID: 4723887014240866}
   attackDamage: 10
