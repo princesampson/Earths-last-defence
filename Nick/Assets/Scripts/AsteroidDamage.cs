@@ -8,9 +8,7 @@ public class AsteroidDamage : MonoBehaviour
 
      void OnTriggerEnter(Collider other)
     {
-        other.gameObject.GetComponent<PlayerHealth>().TakeDamage(damage);
-
-        if (other.CompareTag("Player"))
+       if (other.CompareTag("Player"))
         {
             Destroy(gameObject);
         }

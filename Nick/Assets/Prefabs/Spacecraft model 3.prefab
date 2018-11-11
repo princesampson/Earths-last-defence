@@ -24,6 +24,8 @@ GameObject:
   - component: {fileID: 114364427453712070}
   - component: {fileID: 114258780035324602}
   - component: {fileID: 65624340533590370}
+  - component: {fileID: 54585201333154438}
+  - component: {fileID: 114744081081775232}
   m_Layer: 0
   m_Name: Spacecraft model 3
   m_TagString: Player
@@ -189,6 +191,21 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1341968888092808}
   m_Mesh: {fileID: 4300000, guid: d71acbbf78efab748a021b3b136a430f, type: 3}
+--- !u!54 &54585201333154438
+Rigidbody:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1341968888092808}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!65 &65624340533590370
 BoxCollider:
   m_ObjectHideFlags: 1
@@ -309,3 +326,17 @@ MonoBehaviour:
   blendDistance: 0
   weight: 1
   priority: 0
+--- !u!114 &114744081081775232
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1341968888092808}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e87fb78efc5e05c4e8858d0128b99532, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currenthealth: 10
+  maxhealth: 100
+  healthbar: {fileID: 0}
