@@ -5,7 +5,7 @@ public class EnemyAttack : MonoBehaviour {
     public GameObject enemyLaser;
     private Ray ray;
     private RaycastHit hit;
-    public float rayDistance = 5f;
+    public float rayDistance = 15f;
     public Transform spawner;
 	public float attackDamage = 10f;
 
