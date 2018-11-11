@@ -6,8 +6,7 @@ public class SpaceDebris : MonoBehaviour {
 
     public GameObject [] gameObjects ; 
     public Transform spawner;
-    public Vector3 spawnValue; 
-
+    public Vector3 spawnValue;
     int randomInt;
 
 	// Use this for initialization

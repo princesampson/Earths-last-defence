@@ -4,11 +4,17 @@ using UnityEngine;
 
 public class AsteroidDamage : MonoBehaviour 
 {
-    private void OnTriggerEnter(Collider other)
+    public float damage = 50f;
+
+     void OnTriggerEnter(Collider other)
     {
+        other.gameObject.GetComponent<PlayerHealth>().TakeDamage(damage);
+
         if (other.CompareTag("Player"))
         {
             Destroy(gameObject);
         }
     }
+
+
 }
