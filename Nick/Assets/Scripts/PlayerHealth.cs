@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class PlayerHealth : MonoBehaviour {
 
@@ -9,13 +10,16 @@ public class PlayerHealth : MonoBehaviour {
     public float currenthealth = 10;
     [Range(1, 100)]
     public float maxhealth = 100;
-    float colisionDamage = 10.5f;
+    float colisionDamage = 50f;
     float laserDamage = 15f;
+    float debrisDamage = 10.5f;
+    public bool alive = true;
     // Use this for initializatio0n
 
     public Image healthbar;
     void Start()
     {
+        alive = true;
         currenthealth = maxhealth;
     }
 
@@ -24,6 +28,11 @@ public class PlayerHealth : MonoBehaviour {
     {
         float healthPercentage = currenthealth / maxhealth;
         healthbar.fillAmount = healthPercentage;
+
+        if (currenthealth <= 0)
+        {
+            GameOver();
+        }
     }
 
     private void OnTriggerEnter(Collider other)
@@ -36,5 +45,14 @@ public class PlayerHealth : MonoBehaviour {
         {
             currenthealth -= laserDamage;
         }
+        else if (other.gameObject.CompareTag("Asteroid"))
+        {
+            currenthealth -= debrisDamage;
+        }
+    }
+
+    public void GameOver()
+    {
+        SceneManager.LoadScene("GameOver", LoadSceneMode.Single); //Loads MainMenu Scene as a single scene
     }
 }

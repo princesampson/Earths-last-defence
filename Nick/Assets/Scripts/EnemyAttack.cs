@@ -5,9 +5,9 @@ public class EnemyAttack : MonoBehaviour {
     public GameObject enemyLaser;
     private Ray ray;
     private RaycastHit hit;
-    public float rayDistance = 15f;
+    public float rayDistance = 20f;
     public Transform spawner;
-	public float attackDamage = 10f;
+	
 
 
 	// Use this for initialization
@@ -26,7 +26,7 @@ public class EnemyAttack : MonoBehaviour {
         {
             if (hit.collider.CompareTag("Player") && hit.distance <= rayDistance)
             {
-                print("Player dead");
+               
                 GameObject capsule = Instantiate(enemyLaser, spawner.position, spawner.rotation);
                 Rigidbody enemyLaserRB = capsule.GetComponent<Rigidbody>();
                 enemyLaserRB.velocity = transform.TransformDirection(Vector3.forward * 20f);
@@ -35,11 +35,12 @@ public class EnemyAttack : MonoBehaviour {
         }
     }
 
-	void Attack()
-	{
-		if (true)
-		{
 
-		}
-	}
+    void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("Player"))
+        {
+            Destroy(gameObject);
+        }
+    }
 }
