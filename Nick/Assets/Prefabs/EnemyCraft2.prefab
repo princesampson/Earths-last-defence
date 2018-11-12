@@ -88,7 +88,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 2100000, guid: f3c8ce97a1a67cb47bad38f47db1f32f, type: 3}
+  - {fileID: 2100000, guid: b3319e4e42dff5e4692df75b9c4d5c4c, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -156,4 +156,3 @@ MonoBehaviour:
   enemyLaser: {fileID: 1833766940913750, guid: a16cbd962e24bfe4d8ac796a43bf4bb8, type: 2}
   rayDistance: 5
   spawner: {fileID: 4723887014240866}
-  attackDamage: 10

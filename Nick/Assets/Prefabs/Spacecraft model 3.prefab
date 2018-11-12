@@ -163,8 +163,8 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 2100000, guid: d71acbbf78efab748a021b3b136a430f, type: 3}
-  - {fileID: 2100002, guid: d71acbbf78efab748a021b3b136a430f, type: 3}
+  - {fileID: 2100000, guid: 694a5add6b547d3458dbf586ab5c269f, type: 2}
+  - {fileID: 2100000, guid: 694a5add6b547d3458dbf586ab5c269f, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -339,4 +339,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currenthealth: 10
   maxhealth: 100
+  alive: 1
   healthbar: {fileID: 0}

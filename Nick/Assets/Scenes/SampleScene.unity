@@ -5183,6 +5183,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currenthealth: 10
   maxhealth: 100
+  alive: 1
   healthbar: {fileID: 0}
 --- !u!1001 &663891162
 Prefab:
